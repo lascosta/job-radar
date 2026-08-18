@@ -7,42 +7,63 @@ load_dotenv()
 # Cargo forte: título que só existe mesmo em vaga de dados/BI, sem
 # possibilidade real de ser outra área.
 KEYWORDS_CARGO_FORTE = [
-    "Analista de Dados",
-    "Analista BI",
-    "Analista de BI",
-    "Business Intelligence",
-    "Data Analytics",
-    "Analista de Analytics",
-    "Data Analyst",
-    "Desenvolvedor BI",
-    "Consultor BI",
-    "Analista de Inteligência de Negócios",
-    "BI Developer",
-    "BI Analyst",
-    "Analista de Reporting",
-    "Analista de Inteligência de Mercado",
-    "Analista de Indicadores",
-    "Reporting Analyst",
-    "Insights Analyst",
-    "Data Insights Analyst",
-    "MIS Analyst",
-    "Analista de MIS",
-    "Assistente de BI",
-    "Auxiliar de BI",
-    "Analista de Inteligência Comercial",
-    "Data Specialist",
-    "Data Quality Analyst",
-    "Data Intelligence Analyst",
-    "BI & Analytics Analyst",
-    "Analytics Specialist",
-    "Especialista em Dados",
-    "Analista de Planejamento e Dados",
+    "Desenvolvedor Pega",
+    "Desenvolvedor Senior Pega",
+    "Desenvolvedor Sênior Pega",
+    "Desenvolvedor Sr. Pega",
+    "Pega System Architect",
+    "Pega Senior System Architect",
+    "System Architect",
+    "Senior System Architect",
+    "Desenvolvedor BPM",
+    "Desenvolvedor BPM Senior",
+    "Desenvolvedor BPM Sênior",
+    "Desenvolvedor BPM Sr",
+    "Analista de Suporte Senior",
+    "Analista de Suporte Sênior",
+    "Analista de Suporte Sr.",
+    "Senior Application Support",
+    "Sr. application Support",
+    "Technical Manager Account",
+    "Principal Applications Engineer",
+    "Senior Technical Support Engineer",
+    "Technical Support Coordinator",
+    #"Analista de Dados",
+    #"Analista BI",
+    #"Analista de BI",
+    #"Business Intelligence",
+    #"Data Analytics",
+    #"Analista de Analytics",
+    #"Data Analyst",
+    #"Desenvolvedor BI",
+    #"Consultor BI",
+    #"Analista de Inteligência de Negócios",
+    #"BI Developer",
+    #"BI Analyst",
+    #"Analista de Reporting",
+    #"Analista de Inteligência de Mercado",
+    #"Analista de Indicadores",
+    #"Reporting Analyst",
+    #"Insights Analyst",
+    #"Data Insights Analyst",
+    #"MIS Analyst",
+    #"Analista de MIS",
+    #"Assistente de BI",
+    #"Auxiliar de BI",
+    #"Analista de Inteligência Comercial",
+    #"Data Specialist",
+    #"Data Quality Analyst",
+    #"Data Intelligence Analyst",
+    #"BI & Analytics Analyst",
+    #"Analytics Specialist",
+    #"Especialista em Dados",
+    #"Analista de Planejamento e Dados",
     # "Datos" (espanhol) não é "Dados" (português) — nenhuma keyword em
     # português cobre título em espanhol, mesmo sendo a mesma vaga. Faz
     # sentido aqui no pipeline BR (não só em config_intl.py) porque
     # LinkedInScraper já busca em Argentina/Chile (ver LOCATIONS_LINKEDIN).
-    "Analista de Datos",
-    "Analítica de Datos",
+    #"Analista de Datos",
+    #"Analítica de Datos",
 ]
 
 # Cargo ambíguo: título que também é usado em vaga sem nada a ver com
@@ -52,26 +73,26 @@ KEYWORDS_CARGO_FORTE = [
 # adicionando cargo adjacente (Product Analyst, CRM Analyst, Marketing
 # Analyst etc.) sem cada um virar fonte de ruído sozinho.
 KEYWORDS_CARGO_AMBIGUO = [
-    "Business Analyst",
-    "Analista de Negócios",
-    "Business Analytics",
-    "Analista de Performance",
+#    "Business Analyst",
+#    "Analista de Negócios",
+#    "Business Analytics",
+#    "Analista de Performance",
 ]
 
 # Termo que precisa aparecer junto no título quando o cargo é ambíguo, pra
 # confirmar que é vaga de dados/BI e não de outra área qualquer.
 QUALIFICADORES_DADOS = [
-    "dados",
-    "data",
-    "bi",
-    "sql",
-    "power bi",
-    "analytics",
-    "kpi",
-    "dashboard",
-    "métricas",
-    "reporting",
-    "insights",
+#    "dados",
+#    "data",
+#    "bi",
+#    "sql",
+#    "power bi",
+#    "analytics",
+#    "kpi",
+#    "dashboard",
+#    "métricas",
+#    "reporting",
+#    "insights",
 ]
 
 # Ferramenta que aparece como núcleo do título ("Analista de Power BI").
@@ -81,7 +102,7 @@ QUALIFICADORES_DADOS = [
 # sozinho aprovaria "Power BI Senior" e "Desenvolvedor (Power BI + Python)",
 # que são vaga de desenvolvimento, não de análise.
 FERRAMENTAS_TITULO = [
-    "Power BI",
+    "Pega",
 ]
 
 # Palavra de cargo que confirma que a vaga de ferramenta é de análise.
@@ -94,6 +115,8 @@ QUALIFICADORES_CARGO = [
     "specialist",
     "consultor",
     "consultant",
+    "desenvolvedor",
+    "developer",
 ]
 
 KEYWORDS = KEYWORDS_CARGO_FORTE + KEYWORDS_CARGO_AMBIGUO
@@ -116,8 +139,8 @@ TERMOS_CARGO_EXTRA = [
     # termos mais amplos que a keyword exata, mantidos por dar rede mais
     # larga na busca (a keyword em si é mais restrita, de propósito, pra
     # não gerar falso positivo no filtro de título).
-    "power bi",
-    "inteligência de mercado",
+   # "power bi",
+  #  "inteligência de mercado",
 ]
 
 TERMOS_CARGO = sorted(set(k.lower() for k in KEYWORDS) | set(TERMOS_CARGO_EXTRA))
@@ -134,11 +157,11 @@ TERMOS_CARGO = sorted(set(k.lower() for k in KEYWORDS) | set(TERMOS_CARGO_EXTRA)
 # igual a um termo de cargo.
 TERMOS_FERRAMENTA = [
     "sql",
-    "python",
-    "tableau",
-    "qlik",
-    "looker",
-    "bigquery",
+    "pega",
+    "constellation",
+    "bash",
+    #"looker",
+    #"bigquery",
 ]
 
 TERMOS_BUSCA = TERMOS_CARGO + TERMOS_FERRAMENTA
@@ -181,15 +204,16 @@ TERMOS_POR_CICLO = 10
 CIDADES = [
     "Remoto",
     # As seis do requisito
-    "Campina Grande",
-    "João Pessoa",
-    "Recife",
-    "Natal",
-    "Caruaru",
-    "Manaus",
+    #"Campina Grande",
+    #"João Pessoa",
+    #"Recife",
+    #"Natal",
+    #"Caruaru",
+    #"Manaus",
     # Mantidas por decisao da usuaria, alem do requisito minimo
-    "Maceió",
-    "Aracaju",
+    #"Maceió",
+    #"Aracaju",
+    "Porto Alegre",
 ]
 
 # MEDIDO: "Data Analyst @ Lisboa" e "Analista de Datos @ Madrid" reprovavam
@@ -206,8 +230,8 @@ CIDADES = [
 CIDADES_EUROPA_IBERICA = [
     "Portugal",
     "Lisboa",
-    "Porto",
-    "Braga",
+    #"Porto",
+    #"Braga",
     "Espanha",
     "España",
     "Spain",
@@ -247,7 +271,7 @@ LOCATIONS_LINKEDIN = ["Brasil"]
 # (LOCATIONS_INTL) — evita arriscar nome de país nunca testado (grafia
 # errada ou região que o LinkedIn não resolve como location de verdade,
 # como já visto com "LATAM"/"Latin America").
-LOCATIONS_LINKEDIN_REMOTO_APENAS = ["Argentina", "Chile", "México", "Colômbia", "Espanha", "Portugal"]
+LOCATIONS_LINKEDIN_REMOTO_APENAS = ["Suiça", "Holanda", "Reino Unido", "Alemanha", "Espanha", "Portugal"]
 
 # MEDIDO: a passada nacional acima (location="Brasil") varre o país inteiro
 # e só sobra o que bate em CIDADES depois do filtro — pra termo concorrido
@@ -282,7 +306,7 @@ LOCATIONS_LINKEDIN_CIDADES_PRESENCIAL = [c for c in CIDADES if c != "Remoto"]
 # quando o texto disser isso literalmente (guarda-chuva de verdade, não
 # substituto de nome de país). Portugal e Espanha entraram nominalmente
 # pelo mesmo motivo, desde antes.
-MERCADOS_REMOTO_ACEITOS = ["Brasil", "LATAM", "Argentina", "Chile", "México", "Colômbia", "Portugal", "Espanha"]
+MERCADOS_REMOTO_ACEITOS = ["Brasil", "LATAM", "Suiça", "Holanda", "Reino Unido", "Alemanha", "Portugal", "Espanha"]
 
 INTERVALO_MINUTOS = int(os.getenv("INTERVALO_MINUTOS", 180))
 
@@ -306,8 +330,8 @@ LIMIAR_DIGEST_IMEDIATO = 7
 # então não precisa de agendamento à parte.
 DIGEST_HORA_UTC = 0
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8826835870:AAHFMCxSSOK-k7Ttj0zRGxtpI3PO67u8XFY")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "8826835870")
 
 # Caminho ancorado na RAIZ do projeto, não na pasta deste arquivo.
 #
