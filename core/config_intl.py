@@ -85,17 +85,17 @@ TERMOS_BUSCA_INTL = [
     # Intelligence" como cargo forte, mas nenhum dos dois primeiros nunca
     # era BUSCADO sozinho — só entravam por acidente, dentro de uma frase
     # combinada.
-    "business analyst",
-    "data analyst",
-    "business intelligence",
+    #"business analyst",
+    #"data analyst",
+    #"business intelligence",
     # Eixo Data Annotation / AI Evaluator
-    "data annotation spanish speaker",
+    #"data annotation spanish speaker",
     "data annotation portuguese speaker",
-    "ai evaluator spanish",
+    #"ai evaluator spanish",
     "ai evaluator portuguese",
     "ai trainer portuguese speaker",
-    "ai trainer spanish speaker",
-    "remote data annotator latam",
+    #"ai trainer spanish speaker",
+    #"remote data annotator latam",
     # Termos "soltos" (idioma/mercado sem cargo emparelhado na própria
     # busca) — diferente dos de cima, que sempre combinam cargo+idioma numa
     # frase só. MEDIDO: zero ocorrência de "Spanish"/"Español"/"LATAM" como
@@ -184,6 +184,8 @@ LOCATIONS_INTL = [
     #"Chile",
     "Reino Unido",
     "Alemanha",
+    "Holanda",
+    "Suiça",
 ]
 
 # Sem cidade nenhuma — só remoto, de qualquer país. "Remote" cobre o termo
@@ -219,29 +221,31 @@ CIDADES_INTL = ["Remote", "Remoto"]
 MERCADOS_REMOTO_ACEITOS_INTL = [
     "Portugal",
     "Espanha",
-    "México",
-    "Colômbia",
-    "Argentina",
-    "Chile",
-    "Peru",
-    "Uruguai",
-    "Paraguai",
-    "Bolívia",
-    "Equador",
-    "Venezuela",
-    "Costa Rica",
-    "Panamá",
-    "Guatemala",
-    "Honduras",
-    "El Salvador",
-    "Nicarágua",
-    "República Dominicana",
+    #"México",
+    #"Colômbia",
+    #"Argentina",
+    #"Chile",
+    #"Peru",
+    #"Uruguai",
+    #"Paraguai",
+    #"Bolívia",
+    #"Equador",
+    #"Venezuela",
+    #"Costa Rica",
+    #"Panamá",
+    #"Guatemala",
+    #"Honduras",
+    #"El Salvador",
+    #"Nicarágua",
+    #"República Dominicana",
     "Porto Rico",
     "Cuba",
-    "Angola",
-    "Moçambique",
-    "Cabo Verde",
-    "LATAM",
+    #"Angola",
+    #"Moçambique",
+    #"Cabo Verde",
+    #"LATAM",
+    "Reino Unido",
+    "Holanda",
 ]
 
 # Eixo separado pra isso, controlado por ATIVAR_EIXO_IBERICO — dá pra
@@ -281,8 +285,10 @@ ATIVAR_EIXO_IBERICO = False
 DOMINIOS_INDEED_INTL = {
     "Espanha": "es.indeed.com",
     "Portugal": "pt.indeed.com",
-    "México": "mx.indeed.com",
-    "Colômbia": "co.indeed.com",
-    "Argentina": "ar.indeed.com",
-    "Chile": "cl.indeed.com",
+    #"México": "mx.indeed.com",
+    #"Colômbia": "co.indeed.com",
+    #"Argentina": "ar.indeed.com",
+    #"Chile": "cl.indeed.com",
+    "Reino Unido": "www.indeed.co.uk",
+    "Holanda": "nl.indeed.com",
 }
