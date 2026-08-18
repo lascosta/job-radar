@@ -330,8 +330,8 @@ LIMIAR_DIGEST_IMEDIATO = 7
 # então não precisa de agendamento à parte.
 DIGEST_HORA_UTC = 0
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8826835870:AAHFMCxSSOK-k7Ttj0zRGxtpI3PO67u8XFY")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "8826835870")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
 # Caminho ancorado na RAIZ do projeto, não na pasta deste arquivo.
 #
