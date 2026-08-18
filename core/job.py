@@ -60,9 +60,9 @@ TERMOS_REMOTO = [
     "work from home",
     "trabalhe de casa",  # variante em português vista ao vivo no Catho
     "teletrabalho",  # português (Portugal)
-    "teletrabajo",  # espanhol — termo padrão no mercado espanhol
-    "trabajo a distancia",  # espanhol
-    "desde casa",  # espanhol ("trabajo desde casa")
+    #"teletrabajo",  # espanhol — termo padrão no mercado espanhol
+    #"trabajo a distancia",  # espanhol
+    #"desde casa",  # espanhol ("trabajo desde casa")
     "anywhere",
 ]
 
@@ -145,17 +145,17 @@ _MERCADOS_REMOTO = {
     "uk": "Reino Unido",
     "united kingdom": "Reino Unido",
     "reino unido": "Reino Unido",
-    "india": "Índia",
+    #"india": "Índia",
     "brazil": "Brasil",
     "brasil": "Brasil",
     "portugal": "Portugal",
     "spain": "Espanha",
     "espanha": "Espanha",
     "espana": "Espanha",  # "España" já normalizado (sem ~) vira "espana"
-    "mexico": "México",
-    "colombia": "Colômbia",
-    "argentina": "Argentina",
-    "chile": "Chile",
+    #"mexico": "México",
+    #"colombia": "Colômbia",
+    #"argentina": "Argentina",
+    #"chile": "Chile",
     "canada": "Canadá",
     "germany": "Alemanha",
     "alemanha": "Alemanha",
@@ -170,31 +170,31 @@ _MERCADOS_REMOTO = {
     # cai no mesmo "mercado não mapeado" que qualquer país não aceito (ver
     # comentário em _mercado_correspondente), e nunca bateria contra a lista
     # aceita mesmo sendo um país que o projeto quer aceitar.
-    "peru": "Peru",
+    #"peru": "Peru",
     "uruguay": "Uruguai",
     "uruguai": "Uruguai",
-    "paraguay": "Paraguai",
-    "paraguai": "Paraguai",
-    "bolivia": "Bolívia",
-    "ecuador": "Equador",
-    "equador": "Equador",
-    "venezuela": "Venezuela",
-    "costa rica": "Costa Rica",
-    "panama": "Panamá",
-    "guatemala": "Guatemala",
-    "honduras": "Honduras",
-    "el salvador": "El Salvador",
-    "nicaragua": "Nicarágua",
-    "dominican republic": "República Dominicana",
-    "republica dominicana": "República Dominicana",
-    "puerto rico": "Porto Rico",
-    "porto rico": "Porto Rico",
+    #"paraguay": "Paraguai",
+    #"paraguai": "Paraguai",
+    #"bolivia": "Bolívia",
+    #"ecuador": "Equador",
+    #"equador": "Equador",
+    #"venezuela": "Venezuela",
+    #"costa rica": "Costa Rica",
+    #"panama": "Panamá",
+    #"guatemala": "Guatemala",
+    #"honduras": "Honduras",
+    #"el salvador": "El Salvador",
+    #"nicaragua": "Nicarágua",
+    #"dominican republic": "República Dominicana",
+    #"republica dominicana": "República Dominicana",
+    #"puerto rico": "Porto Rico",
+    #"porto rico": "Porto Rico",
     "cuba": "Cuba",
-    "angola": "Angola",
-    "mozambique": "Moçambique",
-    "mocambique": "Moçambique",
-    "cape verde": "Cabo Verde",
-    "cabo verde": "Cabo Verde",
+    #"angola": "Angola",
+    #"mozambique": "Moçambique",
+    #"mocambique": "Moçambique",
+    #"cape verde": "Cabo Verde",
+    #"cabo verde": "Cabo Verde",
 }
 
 # MEDIDO: "Remoto (Porto Alegre, RS)" e "Remoto (Santiago do Cacém)"
@@ -268,48 +268,48 @@ _CIDADES_MERCADO = {
     "palma de mallorca": "Espanha",
     "illes balears": "Espanha",
     "islas baleares": "Espanha",
-    "mendoza": "Argentina",
-    "rosario": "Argentina",
-    "bucaramanga": "Colômbia",
-    "cali": "Colômbia",
-    "barranquilla": "Colômbia",
-    "cartagena": "Colômbia",
-    "valparaiso": "Chile",
-    "arequipa": "Peru",
-    "cidade do mexico": "México",
-    "ciudad de mexico": "México",
-    "guadalajara": "México",
-    "monterrey": "México",
-    "bogota": "Colômbia",
-    "medellin": "Colômbia",
-    "buenos aires": "Argentina",
-    "cordoba": "Argentina",
-    "santiago": "Chile",
-    "lima": "Peru",
-    "montevideu": "Uruguai",
-    "montevideo": "Uruguai",
-    "assuncao": "Paraguai",
-    "asuncion": "Paraguai",
-    "la paz": "Bolívia",
-    "santa cruz de la sierra": "Bolívia",
-    "quito": "Equador",
-    "guayaquil": "Equador",
+    #"mendoza": "Argentina",
+    #"rosario": "Argentina",
+    #"bucaramanga": "Colômbia",
+    #"cali": "Colômbia",
+    #"barranquilla": "Colômbia",
+    #"cartagena": "Colômbia",
+    #"valparaiso": "Chile",
+    #"arequipa": "Peru",
+    #"cidade do mexico": "México",
+    #"ciudad de mexico": "México",
+    #"guadalajara": "México",
+    #"monterrey": "México",
+    #"bogota": "Colômbia",
+    #"medellin": "Colômbia",
+    #"buenos aires": "Argentina",
+    #"cordoba": "Argentina",
+    #"santiago": "Chile",
+    #"lima": "Peru",
+    #"montevideu": "Uruguai",
+    #"montevideo": "Uruguai",
+    #"assuncao": "Paraguai",
+    #"asuncion": "Paraguai",
+    #"la paz": "Bolívia",
+    #"santa cruz de la sierra": "Bolívia",
+    #"quito": "Equador",
+    #"guayaquil": "Equador",
     "caracas": "Venezuela",
-    "san jose": "Costa Rica",
-    "cidade do panama": "Panamá",
-    "panama city": "Panamá",
-    "cidade da guatemala": "Guatemala",
-    "guatemala city": "Guatemala",
-    "tegucigalpa": "Honduras",
-    "san salvador": "El Salvador",
-    "managua": "Nicarágua",
-    "santo domingo": "República Dominicana",
-    "san juan": "Porto Rico",
-    "havana": "Cuba",
-    "havanna": "Cuba",
-    "luanda": "Angola",
-    "maputo": "Moçambique",
-    "praia": "Cabo Verde",
+    #"san jose": "Costa Rica",
+    #"cidade do panama": "Panamá",
+    #"panama city": "Panamá",
+    #"cidade da guatemala": "Guatemala",
+    #"guatemala city": "Guatemala",
+    #"tegucigalpa": "Honduras",
+    #"san salvador": "El Salvador",
+    #"managua": "Nicarágua",
+    #"santo domingo": "República Dominicana",
+    #"san juan": "Porto Rico",
+    #"havana": "Cuba",
+    #"havanna": "Cuba",
+    #"luanda": "Angola",
+    #"maputo": "Moçambique",
+    #"praia": "Cabo Verde",
 }
 
 # Termos que aparecem depois de "remote" mas NÃO restringem geografia —
@@ -492,12 +492,12 @@ _CAPITAIS_BRASIL = {
 # como as 6 UFs brasileiras ambíguas. Ponto já foi removido de `texto_norm`
 # antes de chegar aqui (ver extrair_escopo_remoto), então "n.l"/"s.l.p"
 # chegam como "nl"/"slp".
-_SIGLAS_ESTADOS_MEXICO = {
-    "ags", "bc", "bcs", "cam", "chis", "chih", "coah", "col", "cdmx",
-    "dgo", "gto", "gro", "hgo", "jal", "mex", "mich", "mor", "nay", "nl",
-    "oax", "pue", "qro", "qroo", "slp", "sin", "son", "tab", "tamps",
-    "tlax", "ver", "yuc", "zac",
-}
+#_SIGLAS_ESTADOS_MEXICO = {
+#    "ags", "bc", "bcs", "cam", "chis", "chih", "coah", "col", "cdmx",
+#    "dgo", "gto", "gro", "hgo", "jal", "mex", "mich", "mor", "nay", "nl",
+#    "oax", "pue", "qro", "qroo", "slp", "sin", "son", "tab", "tamps",
+#    "tlax", "ver", "yuc", "zac",
+#}
 
 
 def _mercados_correspondentes(candidato: str) -> set[str]:
@@ -637,8 +637,8 @@ def extrair_escopo_remoto(texto_local: str, modalidade: str = "") -> set[str]:
         # (o ponto ja foi removido, o espaco nao) e nunca batia contra a
         # forma compacta "slp" do dicionario. Tirar o espaco cobre esse
         # formato sem afetar sigla que ja vem junta.
-        if seg in _SIGLAS_ESTADOS_MEXICO or seg.replace(" ", "") in _SIGLAS_ESTADOS_MEXICO:
-            return {"México"}
+        #if seg in _SIGLAS_ESTADOS_MEXICO or seg.replace(" ", "") in _SIGLAS_ESTADOS_MEXICO:
+        #    return {"México"}
 
     # Nome de mercado por extenso também pode vir DEPOIS da cidade, não só
     # antes ("Florida, United States" — cortar no primeiro segmento, como
