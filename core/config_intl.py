@@ -14,20 +14,26 @@ from core.config import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, DB_PATH, CIDADES_E
 # Cargo em múltiplos idiomas — vaga internacional pode ter o anúncio escrito
 # em inglês, português ou espanhol, dependendo de quem contratou.
 KEYWORDS_INTL = [
-    "Data Analyst",
-    "Business Intelligence",
-    "BI Analyst",
-    "Data Analytics",
-    "Data Specialist",
-    "Analista de Dados",
-    "Business Analyst",
+    #"Data Analyst",
+    #"Business Intelligence",
+    #"BI Analyst",
+    #"Data Analytics",
+    #"Data Specialist",
+    #"Analista de Dados",
+    #"Business Analyst",
+    "Pega Senior System Architect",
+    "Principal Applications Engineer",
+    "Portfolio Success",
+    "Senior Support Analyst",
+    "Senior Technical Support",
+    "Technical Support Coordinator",
     # Nomenclatura em espanhol
-    "Analista de Datos",
-    "Analítica de Datos",
-    "Analista de Inteligencia de Negocios",
-    "Especialista en Datos",
-    "Analista de Business Intelligence",
-    "Analista de Reportes",
+    #"Analista de Datos",
+    #"Analítica de Datos",
+    #"Analista de Inteligencia de Negocios",
+    #"Especialista en Datos",
+    #"Analista de Business Intelligence",
+    #"Analista de Reportes",
     # Eixo separado: Data Annotation / AI Evaluator — não é análise de
     # dados, é rotular/avaliar dado pra treinar IA, mas é um nicho remoto
     # que contrata muito por idioma (PT-BR/ES) e paga em dólar, então entra
@@ -45,21 +51,21 @@ KEYWORDS_INTL = [
 # "data analyst" sozinho aqui — isso é o mundo inteiro sem filtro nenhum de
 # idioma, a maioria fora do nosso alcance.
 TERMOS_BUSCA_INTL = [
-    "data analyst spanish speaker",
-    "data analyst spanish speaking",
-    "data analyst portuguese speaker",
-    "data analyst portuguese speaking",
-    "bilingual data analyst spanish",
-    "bilingual data analyst portuguese",
-    "business intelligence spanish speaker",
-    "business intelligence spanish speaking",
-    "business intelligence portuguese speaker",
-    "business intelligence portuguese speaking",
-    "remote data analyst latam",
-    "remote data analyst latin america",
-    "data analyst spanish market",
-    "business intelligence spanish markets",
-    "analista de datos remoto",
+    #"data analyst spanish speaker",
+    #"data analyst spanish speaking",
+    #"data analyst portuguese speaker",
+    #"data analyst portuguese speaking",
+    #"bilingual data analyst spanish",
+    #"bilingual data analyst portuguese",
+    #"business intelligence spanish speaker",
+    #"business intelligence spanish speaking",
+    #"business intelligence portuguese speaker",
+    #"business intelligence portuguese speaking",
+    #"remote data analyst latam",
+    #"remote data analyst latin america",
+    #"data analyst spanish market",
+    #"business intelligence spanish markets",
+    #"analista de datos remoto",
     # MEDIDO ao vivo: vaga real ("Business Analyst (Colombia) - Remote",
     # Connect Tech+Talent) aparece em location=Colombia&f_WT=2 pro termo
     # bare "business analyst" — testei "spanish speaker", "business
@@ -100,11 +106,12 @@ TERMOS_BUSCA_INTL = [
     # (buscar só "data analyst" sozinho, sem NENHUM filtro de idioma) — aqui
     # é o oposto, idioma sem cargo na busca, e o cargo continua sendo
     # exigido depois por KEYWORDS_INTL antes de qualquer notificação.
-    "spanish speaker",
-    "spanish speaking",
-    "portuguese and spanish",
-    "spanish market",
-    "latam",
+    #"spanish speaker",
+    #"spanish speaking",
+    #"portuguese and spanish",
+    #"spanish market",
+    #"latam",
+    "portuguese and english",
 ]
 
 # MEDIDO: filtro de cargo (KEYWORDS_INTL) nunca checou idioma — a exigência
@@ -123,18 +130,20 @@ TERMOS_BUSCA_INTL = [
 # na maioria das vezes, mas o TÍTULO que sobra pode vir em qualquer um dos
 # três idiomas.
 IDIOMAS_EXIGIDOS_INTL = [
-    "spanish",
-    "espanol",
-    "español",
+    #"spanish",
+    #"espanol",
+    #"español",
     "portuguese",
     "português",
     "portugues",
-    "latam",
-    "latin america",
-    "america latina",
-    "hispanohablante",
-    "lusofono",
-    "lusófono",
+    #"latam",
+    #"latin america",
+    #"america latina",
+    #"hispanohablante",
+    #"lusofono",
+    #"lusófono",
+    "english",
+    "inglês",
 ]
 
 # Rodízio de termos, mesmo mecanismo do TERMOS_POR_CICLO em config.py (ver
@@ -169,10 +178,12 @@ TERMOS_POR_CICLO_INTL = 10
 LOCATIONS_INTL = [
     "Spain",
     "Portugal",
-    "Mexico",
-    "Colombia",
-    "Argentina",
-    "Chile",
+    #"Mexico",
+    #"Colombia",
+    #"Argentina",
+    #"Chile",
+    "Reino Unido",
+    "Alemanha",
 ]
 
 # Sem cidade nenhuma — só remoto, de qualquer país. "Remote" cobre o termo
