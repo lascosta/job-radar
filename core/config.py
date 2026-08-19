@@ -238,6 +238,9 @@ CIDADES_EUROPA_IBERICA = [
     "Madrid",
     "Barcelona",
     "Valencia",
+    "Alemanha",
+    "Holanda",
+    "Reino Unido",
 ]
 
 # Toggle independente do ATIVAR_EIXO_IBERICO de config_intl.py — são dois
@@ -271,7 +274,7 @@ LOCATIONS_LINKEDIN = ["Brasil"]
 # (LOCATIONS_INTL) — evita arriscar nome de país nunca testado (grafia
 # errada ou região que o LinkedIn não resolve como location de verdade,
 # como já visto com "LATAM"/"Latin America").
-LOCATIONS_LINKEDIN_REMOTO_APENAS = ["Suiça", "Holanda", "Reino Unido", "Alemanha", "Espanha", "Portugal"]
+LOCATIONS_LINKEDIN_REMOTO_APENAS = ["Holanda", "Reino Unido", "Alemanha", "Espanha", "Portugal"]
 
 # MEDIDO: a passada nacional acima (location="Brasil") varre o país inteiro
 # e só sobra o que bate em CIDADES depois do filtro — pra termo concorrido
@@ -306,7 +309,7 @@ LOCATIONS_LINKEDIN_CIDADES_PRESENCIAL = [c for c in CIDADES if c != "Remoto"]
 # quando o texto disser isso literalmente (guarda-chuva de verdade, não
 # substituto de nome de país). Portugal e Espanha entraram nominalmente
 # pelo mesmo motivo, desde antes.
-MERCADOS_REMOTO_ACEITOS = ["Brasil", "LATAM", "Suiça", "Holanda", "Reino Unido", "Alemanha", "Portugal", "Espanha"]
+MERCADOS_REMOTO_ACEITOS = ["Brasil", "LATAM", "Holanda", "Reino Unido", "Alemanha", "Portugal", "Espanha"]
 
 INTERVALO_MINUTOS = int(os.getenv("INTERVALO_MINUTOS", 180))
 
