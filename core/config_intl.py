@@ -38,12 +38,13 @@ KEYWORDS_INTL = [
     # dados, é rotular/avaliar dado pra treinar IA, mas é um nicho remoto
     # que contrata muito por idioma (PT-BR/ES) e paga em dólar, então entra
     # como categoria própria de cargo, não mistura com as de análise.
-    "Data Annotator",
-    "Data Annotation",
-    "AI Evaluator",
-    "AI Trainer",
-    "Data Labeler",
-    "Search Quality Rater",
+    #"Data Annotator",
+    #"Data Annotation",
+    #"AI Evaluator",
+    #"AI Trainer",
+    #"Data Labeler",
+    #"Search Quality Rater",
+    "AI Integrator",
 ]
 
 # Termos de busca: cargo + sinal de idioma (português/espanhol/bilíngue) ou
@@ -112,6 +113,8 @@ TERMOS_BUSCA_INTL = [
     #"spanish market",
     #"latam",
     "portuguese and english",
+    "portuguese speaker",
+    "english speaker",
 ]
 
 # MEDIDO: filtro de cargo (KEYWORDS_INTL) nunca checou idioma — a exigência
@@ -185,7 +188,6 @@ LOCATIONS_INTL = [
     "Reino Unido",
     "Alemanha",
     "Holanda",
-    "Suiça",
 ]
 
 # Sem cidade nenhuma — só remoto, de qualquer país. "Remote" cobre o termo
@@ -226,7 +228,7 @@ MERCADOS_REMOTO_ACEITOS_INTL = [
     #"Argentina",
     #"Chile",
     #"Peru",
-    #"Uruguai",
+    "Uruguai",
     #"Paraguai",
     #"Bolívia",
     #"Equador",
@@ -238,7 +240,7 @@ MERCADOS_REMOTO_ACEITOS_INTL = [
     #"El Salvador",
     #"Nicarágua",
     #"República Dominicana",
-    "Porto Rico",
+    #"Porto Rico",
     "Cuba",
     #"Angola",
     #"Moçambique",
@@ -264,7 +266,7 @@ MERCADOS_REMOTO_ACEITOS_INTL = [
 # presencial/híbrida em Lisboa/Madrid não é o que o usuário quer, mesmo
 # achada de propósito via LOCATIONS_INTL. Continua fácil de religar depois
 # (só o toggle), sem apagar nada da lista/lógica.
-ATIVAR_EIXO_IBERICO = False
+ATIVAR_EIXO_IBERICO = True
 
 # Indeed usa subdomínio por país, não parâmetro de location como o
 # LinkedIn. Confirmei ao vivo que es.indeed.com, pt.indeed.com e
